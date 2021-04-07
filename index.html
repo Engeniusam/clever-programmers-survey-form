@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Survey Form
+    </title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muchiri Samuel Macharia">
+    <meta name="description" content="A simple survey form">
+    <meta name="keywords" content="survey,form,frontend">
+    <meta name="viewport" content="width=device-width,initial-viewport=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="t1">Clever Programmers Survey Form</h1>
+    <h3 class="t2"><small>Thank you for taking the time to help us improve the platform</small></h3>
+    <form >
+      <div class="me" >
+        <label for="name">Name</label><br>
+        <input class="a" type="text" id="name" placeholder="Enter your name" >
+      </div>
+      <div class="me">
+        <label for="email">Email</label><br>
+        <input id="email" class="a" type="email" placeholder="Enter your Email">
+      </div>
+      <div class="me">
+        <label for="age">Age <small>(optional)</small></label><br>
+        <input class="a" type="number" min="10" placeholder="Age">
+      </div>
+      <div class="me">
+        <label for="role">Which option best describes your current role ?</label><br>
+        <select aria-label="Select an option">
+          <option disabled selected value>Select current role</option>
+          <option value="Student">Student</option>
+          <option value="FTJ">Full Time Job</option>
+          <option value="FTL">Full Time Learner</option>
+          <option value="Pnts">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label>Would you recommend CleverProgrammers to a friend?</label>
+        <br>
+        <input type="radio" id="def"name="friend" >Definitely
+        <br>
+        <input type="radio" name="friend" id="maybe">Maybe<br>
+        <input type="radio" name="friend" id="not">Not sure
+      </div>
+      <div>
+        <label>What would you like to see improved? <small>(check all that apply)</small>
+        </label><br>
+        <br>
+        <input type="checkbox" id="FEP">Front-end Projects<br>
+        <input type="checkbox" id="BEP">Back-end Projects<br>
+        <input type="checkbox" id="DV">Data Visualization<br>
+        <input type="checkbox" id="ch">Challenges<br>
+        <input type="checkbox" id="osc">Open Source Community<br>
+        <input type="checkbox" id="GHR">Gitter help rooms<br>
+        <input type="checkbox" id="v">Videos<br>
+        <input type="checkbox" id="cm">City Meetups<br>
+        <input type="checkbox" id="w">Wiki<br>
+        <input type="checkbox" id="F">Forum<br>
+        <input type="checkbox" id="ac">Additional Courses
+      </div>
+      <div class="me">
+        <label>Any comments or suggestions?</label><br>
+        <textarea rows="4" columns="14" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <br>
+      <div class="me"><input type="submit" value="Submit"></div>
+      </form>
+
+      <div style="text-align:center;">written and coded by <em style="color:palegreen;">Muchiri Samuel Macharia</em></div>
+
+  </body>
+</html>
